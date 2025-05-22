@@ -45,17 +45,17 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  TAB |  0  |  1  |  2  |  3  |  4  |   |  5  |  6  |  7  |  8  |  9  | BKSP |
+            // | SHFT |     |     |ASTRK|PLUS |MINUS|   | LFT | DWN |  UP | RGT |     |      |
+            // | CTRL |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ESC |     | ALT |
 
             display-name = "Lower";
             bindings = <
-&kp TAB         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BSPC
+&kp TAB         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp BSPC
 &kp LEFT_SHIFT  &trans        &trans        &kp ASTRK     &kp PLUS      &kp MINUS       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
 &kp LCTRL       &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
-                                            &kp LGUI      &trans        &kp RET         &kp SPACE     &trans        &kp RALT
+                                            &kp LGUI      &trans        &kp SPACE         &kp ESC     &trans        &kp RALT
             >;
         };
 
