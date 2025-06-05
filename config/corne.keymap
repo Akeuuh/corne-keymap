@@ -45,16 +45,16 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  0  |  1  |  2  |  3  |  4  |   |  5  |  6  |  7  |  8  |  9  | ESC |
-            // | SHFT |     |     |ASTRK|PLUS |MINUS|   | LFT | DWN |  UP | RGT |     |      |
-            // | CTRL |     |     |     |     |     |   |     |     |     |     |     |      |
+            // |  TAB |  0  |  1  |  2  |  3  |  *  |   |     |     |     |     |     | ESC |
+            // | SHFT |     |  4  |  5  |  6  |  +  |   | LFT | DWN |  UP | RGT |     |      |
+            // | CTRL |     |  7  |  8  |  9  |  -  |   |     |     |     |     |     |      |
             //                    |     |GUI  | RET |   | SPC |  AL |     |
 
             display-name = "Lower";
             bindings = <
-&kp TAB             &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp ESC
-&kp LEFT_SHIFT      &trans        &trans        &kp ASTRK     &kp PLUS      &kp MINUS       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
-&kp LCTRL           &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
+&kp TAB             &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK    &trans        &trans        &trans        &trans        &trans        &kp ESC
+&kp LEFT_SHIFT      &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
+&kp LCTRL           &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS    &trans        &trans        &trans        &trans        &trans        &trans
                                                 &trans        &kp LGUI      &kp RET         &kp SPACE       &kp RALT      &trans
             >;
         };
