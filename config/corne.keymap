@@ -68,5 +68,13 @@
                                 &to 0   &kp LGUI  &kp RET    &kp SPACE       &kp RIGHT_ALT     &to 0
             >;
         };
+
+        conditional_layer {
+            compatible = "zmk,behavior-tri-layer"; 
+            tri_layers {
+                if-layer = <1 2>;
+                then-layer = <3>;
+            };
+        };
     };
 };
