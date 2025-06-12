@@ -10,6 +10,15 @@
 &mt { tapping-term-ms = <350>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Media {
+            bindings = <&tog 3>;
+            key-positions = <36 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
