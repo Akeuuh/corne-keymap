@@ -32,7 +32,7 @@
 
         combo_ctrl_tab {
             timeout-ms = <50>;
-            key-positions = <38 0>; // TODO: Replace with actual key positions (e.g. S + D)
+            key-positions = <0 29>; // TAB + RET
             bindings = <&ctrl_tab_macro>;
         };
     };
